@@ -1,0 +1,12 @@
+let metroCard = 3.75;
+let fundsNeeded = (2.75 - metroCard);
+let finalFundsNeeded = Math.round(10*fundsNeeded)/10
+
+if (metroCard > 3.75 || metroCard === 3.75) {
+  console.log('You have enough funds! Thank you for riding with us at MTA.')
+} else if (metroCard > 2.75 && metroCard < 3.75 || metroCard === 2.75) {
+  console.log('Warning: you will not have many funds left after this purchase. Nevertheless, we thank you for riding with us at MTA.')
+}
+else {
+  console.log (`Sorry, you do not have enough funds to ride. You will need approximately ${finalFundsNeeded} more dollar(s) in order to ride with us today.`)
+}
